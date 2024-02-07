@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+header div {
+    display: flex;
+    font-size: 3em;
+    color: rgb(190, 190, 190);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header div span:first-of-type {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 5s ease;
+    animation-delay: 0.5s;    
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
