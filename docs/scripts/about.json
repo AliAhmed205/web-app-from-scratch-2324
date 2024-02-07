@@ -1,6 +1,7 @@
 {  
     "kaart-1": {  
         "name":       "Ali Ahmed",
-        "avatar": "./"
+        "avatar": "./content/avatarIcon.svg",
+        "age": 23
     }  
 }
