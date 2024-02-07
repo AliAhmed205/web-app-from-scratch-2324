@@ -142,3 +142,9 @@ section article.flipped {
   transform: rotate(0deg);
   top: 0;
 }
+
+.ageNumber {
+  color: blue;
+  text-align: left;
+  margin-left: 1rem;
+}
