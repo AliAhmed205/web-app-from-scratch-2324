@@ -1,5 +1,6 @@
 {  
     "kaart-1": {  
-        "name":       "Ali Ahmed"
+        "name":       "Ali Ahmed",
+        "avatar": "./"
     }  
 }

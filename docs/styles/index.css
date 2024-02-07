@@ -5,6 +5,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -53,6 +54,7 @@ html {
   border-radius: 10px;
 }
 
+
 .container article.flipped>figure {
   transform: rotateY(180deg);
 }
@@ -67,9 +69,6 @@ html {
   align-items: center;
 }
 
-.container article.hovered {
-  transition: 0.2s;
-}
 
 .container article.dimmed {
   filter: brightness(0.9);
@@ -80,6 +79,8 @@ html {
   transform: rotate(-30deg);
   transition: 0.2s ease;
   top: 100px;
+  /* position: absolute;
+  z-index: 1; */
 }
 
 .container article:nth-of-type(2) {
@@ -132,4 +133,11 @@ html {
 .container article:nth-of-type(5):hover {
   transition: 0.2s ease;
   top: 0px;
+}
+
+.container article.flipped {
+  z-index: 2;
+  width: 350px; /* bijgewerkte breedte */
+  height: 600px; /* bijgewerkte hoogte */
+  transform: rotate(0deg);
 }
