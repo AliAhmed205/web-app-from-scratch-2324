@@ -144,7 +144,28 @@ section article.flipped {
 }
 
 .ageNumber {
+  position: absolute;
   color: blue;
   text-align: left;
   margin-left: 1rem;
+  z-index: 999;
+}
+
+.avatarIcon {
+  width: 100px;
+}
+
+.kaart-1 div:nth-of-type(2) {
+  position: absolute;
+  width: 195px;
+  height: 340px;
+  left: 1.5rem;
+  margin-top: 2rem;
+  background-color: transparent;
+  border: solid red 2px;
+  top: 0;
+}
+
+.kaart-1 img:nth-of-type(2){
+  transform: rotate(180deg);
 }
