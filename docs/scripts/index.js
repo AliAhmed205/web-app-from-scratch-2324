@@ -1,34 +1,50 @@
-main().then(() => console.log('done'))
+const container = document.querySelector('.container')
+const naam = document.getElementById("mijnNaam")
+const githubJsonUrl = 'https://raw.githubusercontent.com/jouwgebruikersnaam/jouwreponaam/hoofdmap/bestandsnaam.json';
+let isKaartFlipped = false
 
-async function main() {
-    const students = await getStudents();
-    renderStudents(students.sort(() => 0.5 - Math.random()))
-}
+container.addEventListener('click', function(event) {
+    const kaart = event.target.closest('article')
+    if (kaart && !isKaartFlipped) {
+        kaart.classList.toggle('flipped')
+        isKaartFlipped = true
+    }
+})
 
-function renderStudents(students) {
-    const container = document.querySelector('[data-students]');
-    const list = document.createElement('ul')
+document.addEventListener('click', function(event) {
+    if (isKaartFlipped) {
+        const clickedElement = event.target
+        if (!clickedElement.closest('.container')) {
+            const alleKaarten = document.querySelectorAll('.container article')
+            alleKaarten.forEach(function(kaart) {
+                kaart.classList.remove('flipped')
+            })
+            isKaartFlipped = false
+        }
+    }
+})
 
-    students.map(student => {
-        const item = document.createElement('li')
-        const anchor = document.createElement('a');
-        const description = document.createElement('p')
-        const avatar = document.createElement('img')
-        anchor.href = `https://${student.login}.github.io/web-app-from-scratch-2324/`
-        anchor.alt = `WAFS fork from ${student.login}`
-        anchor.target = '_blank'
-        anchor.textContent = student.login
-        avatar.src = student.avatar_url
-        item.append(avatar)
-        item.append(anchor)
-        list.append(item)
-    })
-    container.append(list)
-}
+container.addEventListener('mouseover', function(event) {
+    const kaart = event.target.closest('article')
+    const kaarten = document.querySelectorAll('.container article')
 
-async function getStudents() {
-    const res = await fetch('https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-2324/forks')
-    const teams = await res.json()
-    console.log(teams);
-    return teams.map(({owner}) => owner)
-}
+    if (kaart && !isKaartFlipped) {
+        kaart.classList.add('hovered')
+        kaarten.forEach(function(item) {
+            if (item !== kaart) {
+                item.classList.add('dimmed')
+            }
+        })
+    }
+})
+
+container.addEventListener('mouseout', function(event) {
+    const kaart = event.target.closest('article')
+    const kaarten = document.querySelectorAll('.container article')
+    if (kaart) {
+        kaart.classList.remove('hovered')
+        kaarten.forEach(function(item) {
+            item.classList.remove('dimmed')
+        })
+    }
+})
