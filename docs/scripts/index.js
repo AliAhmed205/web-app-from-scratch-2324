@@ -1,6 +1,6 @@
 const container = document.querySelector('.container')
-const fullNameElement = document.querySelector('.fullName')
-const firstnameElement = document.querySelector('.firstName')
+const titleCard = document.querySelector('.title')
+const firstnameElement = document.querySelector('.firstName'); 
 const age = document.querySelector('.ageNumber')
 const githubJsonUrl = 'https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/scripts/about.json'
 let isKaartFlipped = false
@@ -9,14 +9,16 @@ async function haalJSONop() {
     try {
         const reactie = await fetch(githubJsonUrl)
         const data = await reactie.json()
-        fullNameElement.textContent = data['kaart-1'].fullname
-        firstnameElement.textContent = data['kaart-1'].name
+
+        titleCard.textContent = data['kaart-1'].title
+        firstnameElement.textContent = data['kaart-1'].firstname
         age.textContent = data['kaart-1'].age
         const avatarImgs = document.querySelectorAll('.avatarIcon')
         avatarImgs.forEach(img => {
             img.src = data['kaart-1'].avatar
             img.alt = "Pharaoh Avatar"
         })
+        console.log(data)
     } catch (error) {
         console.error('Er is een fout opgetreden bij het ophalen en verwerken van de JSON:', error)
     }

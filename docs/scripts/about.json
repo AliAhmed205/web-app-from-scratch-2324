@@ -1,7 +1,7 @@
 {
     "kaart-1": {
-        "fullname": "Ali Ahmed",
-        "name": "Ali",
+        "title": "Ali Ahmed",
+        "firstname": "Ali",
         "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/pharaoh_avatar.svg",
         "age": 23
     }

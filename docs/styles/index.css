@@ -43,7 +43,7 @@ section article .achterkant {
 }
 
 section article .voorkant {
-  background-color: #ccc;
+  background-color: rgb(235, 235, 235);
   border-radius: 10px;
   transform: rotateY(0deg);
 }
@@ -59,9 +59,6 @@ section article.flipped>figure {
   transform: rotateY(180deg);
 }
 
-section article.flipped:hover>figure {
-  transform: rotateY(170deg);
-}
 
 section article .kaart-inhoud {
   display: flex;
@@ -110,48 +107,22 @@ section article:nth-of-type(5) {
   top: 50px;
 }
 
-section article:first-of-type:hover {
-  top: 50px;
-  transition: 0.2s ease;
-}
-
-section article:nth-of-type(2):hover {
-  bottom: 50px;
-  transition: 0.2s ease;
-}
-
-section article:nth-of-type(3):hover {
-  bottom: 80px;
-  transition: 0.2s ease;
-}
-
-section article:nth-of-type(4):hover {
-  bottom: 90px;
-  transition: 0.2s ease;
-}
-
-section article:nth-of-type(5):hover {
-  transition: 0.2s ease;
-  top: 0px;
-}
 
 section article.flipped {
   z-index: 2;
-  width: 350px; /* bijgewerkte breedte */
-  height: 600px; /* bijgewerkte hoogte */
-  transform: rotate(0deg);
-  top: 0;
 }
 
-.ageNumber {
+h2 {
   position: absolute;
-  color: blue;
+  color: rgb(20, 20, 27);
   text-align: left;
   margin-left: 1rem;
-  z-index: 999;
+  z-index: 99; /* Zet de z-index op 1 om het boven de div te plaatsen */
 }
 
-.avatarIcon {
+
+.avatarIcon:first-of-type {
+  margin-top: 3rem;
   width: 100px;
 }
 
@@ -166,6 +137,13 @@ section article.flipped {
   top: 0;
 }
 
+
 .kaart-1 img:nth-of-type(2){
   transform: rotate(180deg);
+  width: 100px;
+}
+
+.firstname {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
