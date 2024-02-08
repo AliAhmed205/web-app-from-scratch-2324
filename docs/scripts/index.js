@@ -2,6 +2,7 @@ const container = document.querySelector('.container')
 const titleCard = document.querySelector('.title')
 const firstnameElement = document.querySelector('.firstName'); 
 const age = document.querySelector('.ageNumber')
+const bioTextEl = document.querySelector('.bioText')
 const githubJsonUrl = 'https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/scripts/about.json'
 let isKaartFlipped = false
 
@@ -12,6 +13,7 @@ async function haalJSONop() {
         titleCard.textContent = data['kaart-1'].title
         firstnameElement.textContent = data['kaart-1'].firstname
         age.textContent = data['kaart-1'].age
+        bioTextEl.textContent = data['kaart-1'].bio
         const avatarImgs = document.querySelectorAll('.avatarIcon')
         avatarImgs.forEach(img => {
             img.src = data['kaart-1'].avatar
@@ -50,35 +52,6 @@ document.addEventListener('click', function(event) {
             const flippedCard = document.querySelector('.container article.flipped')
             flippedCard.classList.remove('flipped')
             isKaartFlipped = false
-        }
-    }
-})
-
-container.addEventListener('mouseover', function(event) {
-    if (!isKaartFlipped) {
-        const kaart = event.target.closest('article')
-        const kaarten = document.querySelectorAll('.container article')
-
-        if (kaart) {
-            kaart.classList.add('hovered')
-            kaarten.forEach(function(item) {
-                if (item !== kaart) {
-                    item.classList.add('dimmed')
-                }
-            })
-        }
-    }
-})
-
-container.addEventListener('mouseout', function(event) {
-    if (!isKaartFlipped) {
-        const kaart = event.target.closest('article')
-        const kaarten = document.querySelectorAll('.container article')
-        if (kaart) {
-            kaart.classList.remove('hovered')
-            kaarten.forEach(function(item) {
-                item.classList.remove('dimmed')
-            })
         }
     }
 })

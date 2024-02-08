@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&family=Rubik+Mono+One&display=swap');
+
 body,
 html {
   height: 100%;
@@ -6,7 +8,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+  background: radial-gradient(#e66465, #9198e5);}
 
 section {
   display: flex;
@@ -43,13 +45,13 @@ section article .achterkant {
 }
 
 section article .voorkant {
-  background-color: rgb(235, 235, 235);
+  background-color: #FBF4F4;
   border-radius: 10px;
   transform: rotateY(0deg);
 }
 
 section article .achterkant {
-  background-color: #f00;
+  background-color: white;
   transform: rotateY(180deg);
   border-radius: 10px;
 }
@@ -76,8 +78,6 @@ section article:first-of-type {
   transform: rotate(-30deg);
   transition: 0.2s ease;
   top: 100px;
-  /* position: absolute;
-  z-index: 1; */
 }
 
 section article:nth-of-type(2) {
@@ -110,6 +110,8 @@ section article:nth-of-type(5) {
 
 section article.flipped {
   z-index: 2;
+  transform: rotate(0deg);
+  top: 1.3rem;
 }
 
 h2 {
@@ -117,12 +119,14 @@ h2 {
   color: rgb(20, 20, 27);
   text-align: left;
   margin-left: 1rem;
-  z-index: 99; /* Zet de z-index op 1 om het boven de div te plaatsen */
+  z-index: 1;
+  background-color: #FBF4F4;
+  padding: 0.15rem;
 }
 
 
-.avatarIcon:first-of-type {
-  margin-top: 3rem;
+.kaart-1 div:nth-of-type(2) .avatarIcon:first-of-type {
+  margin-top: 2.5rem;
   width: 100px;
 }
 
@@ -133,8 +137,10 @@ h2 {
   left: 1.5rem;
   margin-top: 2rem;
   background-color: transparent;
-  border: solid red 2px;
+  border: solid #B0834D 2px;
+  background-color: #FBF4F4;
   top: 0;
+
 }
 
 
@@ -143,7 +149,31 @@ h2 {
   width: 100px;
 }
 
-.firstname {
-  font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+.kaart-1 .achterkant img {
+  width: 5rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.firstName {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Radley', serif;
+  width: 100%;
+  background-color: #9F0000;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+.title {
+  font-family: 'Rubik Mono One', monospace;
+  font-size: 1.3rem;
+  width: 50%;
+  line-height: 1.2rem;
+  margin: 0 auto;
+}
+
+.bioText {
+  color: black;
 }

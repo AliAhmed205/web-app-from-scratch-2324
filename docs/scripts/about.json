@@ -3,6 +3,10 @@
         "title": "Ali Ahmed",
         "firstname": "Ali",
         "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/pharaoh_avatar.svg",
-        "age": 23
+        "age": 23,
+        "bio": ["De naam kaart! De naam luidt als zoals er precies staat. De naam komt van het arabische woord “علي”, wat verheven betekent. Het is ook een naam die vaak door moslims gebruikt wordt. ", 
+                "Het lijkt me sterk dat je niet bekend kan zijn Mohammed Ali, de bekende kickbokser uit de jaren 60. De voormalige rapper Ali Bouali en natuurlijk Ali Baba! ",
+                "Ahmed is een Turkse jongensnaam, die via het Arabische Ahmad de betekenis prijzenswaardig draagt. De betekenis van Arabische woorden met de combinatie H-M-D kan ook zijn iemand die God voortdurend dankt. Het heeft daarmee dezelfde oorsprong als Mohammed."],
+        "horizontal-line" : ""    
     }
 }
