@@ -42,11 +42,11 @@ async function updateBio() {
   const cards = await fetchJSONdata()
   console.log(cards)
   if (cards) {
-      const bioElement = document.querySelectorAll('.bio-El')
-      bioElement.forEach((p, index) => {
-        bioElement.textContent = cards[index].bio 
+      const bioElements = document.querySelectorAll('.bio-El')
+      bioElements.forEach((p, index) => {
+        p.textContent = cards.cards[index].bio 
     })
-}
+  }
 }
 
 
