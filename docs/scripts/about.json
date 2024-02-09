@@ -6,6 +6,23 @@
             "age": 23,
             "bio": "Ik ben Ali, en ik ben 23 jaar oud. Ik kom uit Egypte maar ben geboren en getogen in Nederland. Ik heb een vormgever achtergrond en wil graag nu meer richting de technische kant op.",
             "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/memoji.png"
+         },
+         {
+            "id": "2",
+            "title": "skills",
+            "bio": "Ik ben aardig bekend met deze software. Vaak combineer ik de softwares als ik aan het werk ben omdat ze elkaar goed aanvullen.",
+            "avatar": [""]
+         },
+         {
+            "id": "3",
+            "title": "Hobbies",
+            "bio": "Je bent vast bekend met het klassieke gezegde: maak van je hobby je werk. Ik ben vaak bezig met HTML/CSS en vind het leuk om leuke websites te maken.",
+            "avatar": ""
+         },
+         {
+            "id": "4",
+            "title": "Leuke Feitjes",
+            "avatar": ""
          }
     ]
 }
