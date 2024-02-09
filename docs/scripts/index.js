@@ -44,7 +44,7 @@ async function updateBio() {
   if (cards) {
       const bioElement = document.querySelectorAll('.bio-El')
       bioElement.forEach((p, index) => {
-        bioEl.textContent = cards[index].bio 
+        bioElement.textContent = cards[index].bio 
     })
 }
 }
