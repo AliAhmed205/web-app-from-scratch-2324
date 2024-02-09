@@ -1,8 +1,4 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  await updateTitles()
-  // await updateAvatar()
-  
-  document.querySelectorAll('article').forEach(item => {
+document.querySelectorAll('article').forEach(item => {
       item.addEventListener('click', () => {
           if (item.classList.contains('flip')) {
               item.classList.remove('flip')
@@ -14,7 +10,9 @@ document.addEventListener('DOMContentLoaded', async () => {
           }
       })
   })
-})
+ updateTitles()
+ updateAvatar()
+
 
 async function fetchJSONdata() {
   try {
@@ -29,6 +27,7 @@ async function fetchJSONdata() {
 
 async function updateTitles() {
   const cards = await fetchJSONdata()
+  console.log(cards)
   if (cards) {
       const h1Elements = document.querySelectorAll('h1')
       h1Elements.forEach((h1, index) => {
@@ -36,14 +35,26 @@ async function updateTitles() {
       })
   }
 }
-// async function updateAvatar() {
-//   const cards = await fetchJSONdata()
-//   if (cards) {
-//       const avatarEls = document.querySelectorAll('img')
-//       avatarEls.forEach((img, index) => {
-//         if (cards[index] && cards[index].avatar) {
-//           img.src = cards[index].avatar
-//         } 
-//       })
-//   }
-// }
+
+
+
+async function updateAvatar() {
+  const cards = await fetchJSONdata()
+  if (cards) {
+      const avatarEls = document.querySelectorAll('.avatarIcon');
+
+      console.log('about to start loop');
+      avatarEls.forEach((img, index) => {
+        console.log('loop started for '+ index);
+        if (cards[index] && cards[index].avatar) {
+
+          console.log('avatar on card index exists');
+          img.src = cards[index].avatar
+        } else {
+          console.log('avusing this');
+          console.log(this);
+          img.src = this.avatar;
+        }
+      })
+  }
+}

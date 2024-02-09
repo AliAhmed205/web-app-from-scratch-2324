@@ -1,10 +1,11 @@
 {
     "cards": [
         {
+            "id": "1",
             "title": "Ali Ahmed",
             "age": 23,
-            "bio": "De naam kaart! De naam luidt als zoals er precies staat. De naam komt van het arabische woord “علي”, wat verheven betekent. Het is ook een naam die vaak door moslims gebruikt wordt. "
-
+            "bio": "De naam kaart! De naam luidt als zoals er precies staat. De naam komt van het arabische woord “علي”, wat verheven betekent. Het is ook een naam die vaak door moslims gebruikt wordt. ",
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/me.png"
          }
     ]
 }
