@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   await updateTitles()
-  await updateAvatar()
+  // await updateAvatar()
   
   document.querySelectorAll('article').forEach(item => {
       item.addEventListener('click', () => {
@@ -36,14 +36,14 @@ async function updateTitles() {
       })
   }
 }
-
-async function updateAvatar() {
-  const cards = await fetchJSONdata()
-  if (cards) {
-      const avatarEl = document.querySelectorAll('img')
-      avatarEl.forEach((img, index) => {
-        avatarEl[index].src = cards[index].avatar
-      })
-  }
-}
-
+// async function updateAvatar() {
+//   const cards = await fetchJSONdata()
+//   if (cards) {
+//       const avatarEls = document.querySelectorAll('img')
+//       avatarEls.forEach((img, index) => {
+//         if (cards[index] && cards[index].avatar) {
+//           img.src = cards[index].avatar
+//         } 
+//       })
+//   }
+// }
