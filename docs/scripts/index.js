@@ -12,6 +12,8 @@ document.querySelectorAll('article').forEach(item => {
   })
  updateTitles()
  updateAvatar()
+ updateBio()
+
 
 
 async function fetchJSONdata() {
@@ -36,23 +38,27 @@ async function updateTitles() {
   }
 }
 
+async function updateBio() {
+  const cards = await fetchJSONdata()
+  console.log(cards)
+  if (cards) {
+      const bioElement = document.querySelectorAll('.bio-El')
+      bioElement.forEach((p, index) => {
+        bioEl.textContent = cards[index].bio 
+    })
+}
+}
+
 
 
 async function updateAvatar() {
   const cards = await fetchJSONdata()
   if (cards) {
       const avatarEls = document.querySelectorAll('.avatarIcon');
-
-      console.log('about to start loop');
       avatarEls.forEach((img, index) => {
-        console.log('loop started for '+ index);
         if (cards[index] && cards[index].avatar) {
-
-          console.log('avatar on card index exists');
           img.src = cards[index].avatar
         } else {
-          console.log('avusing this');
-          console.log(this);
           img.src = this.avatar;
         }
       })

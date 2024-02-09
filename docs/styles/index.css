@@ -102,6 +102,7 @@ section article .back div {
 
 section article .back {
     flex-direction: column;
+
 }
 
 section:hover {
@@ -171,7 +172,14 @@ h1 {
     line-height: 1rem;
     font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
+    margin: 0;
 
+}
+
+.avatarIcon {
+    justify-self: center;
+    width: 150px;
+    margin: 0;
 }
 
 
