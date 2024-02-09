@@ -5,13 +5,14 @@
             "title": "Ali Ahmed",
             "age": 23,
             "bio": "Ik ben Ali, en ik ben 23 jaar oud. Ik kom uit Egypte maar ben geboren en getogen in Nederland. Ik heb een vormgever achtergrond en wil graag nu meer richting de technische kant op.",
-            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/memoji.png"
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/memoji.png",
+            "icons": ["https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/discord.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/github-icon.svg", "https://github.com/AliAhmed205/web-app-from-scratch-2324/blob/main/docs/content/linkedin.svg"]
          },
          {
             "id": "2",
             "title": "skills",
             "bio": "Ik ben aardig bekend met deze software. Vaak combineer ik de softwares als ik aan het werk ben omdat ze elkaar goed aanvullen.",
-            "avatar": [""]
+            "avatar": ["https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_photoshop.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_illustrator.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/figma.svg"]
          },
          {
             "id": "3",

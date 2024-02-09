@@ -3,17 +3,26 @@
 <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#E34F26;}
-	.st1{fill:#EF652A;}
-	.st2{fill:#EBEBEB;}
-	.st3{fill:#FFFFFF;}
+	.st0{clip-path:url(#SVGID_00000091717628845537441170000012133547019748648840_);}
+	.st1{fill:#E34F26;}
+	.st2{fill:#EF652A;}
+	.st3{fill:#EBEBEB;}
+	.st4{fill:#FFFFFF;}
 </style>
 <g>
-	<path class="st0" d="M-92.2,320.5l-47.2-452.1h518.8l-47.2,452.1l-212.8,51.1"/>
-	<path class="st1" d="M120.2,221.2l69.8-19.2l16.4-184.7h-86.2"/>
-	<path class="st2" d="M120.2,97.5H85.1l-2.3-27.2h37.5V44.1h-0.5H53.7l0.5,7l6.6,73.1h59.5V97.5z M120.2,166.4h-0.5l-29.5-8
-		l-1.9-21.1H74.3H62.1l3.3,41.7l54.4,15h0.5V166.4z"/>
-	<path class="st3" d="M119.8,97.5v26.7h32.8l-3.3,34.2l-29.5,8v27.7l54.4-15l0.5-4.7l6.1-69.8l0.9-7h-7.5H119.8z M119.8,44.1v16.4
-		v9.8l0,0H184l0,0l0,0l0.5-5.6l1.4-13.6l0.5-7H119.8z"/>
+	<defs>
+		<rect id="SVGID_1_" x="0.3" y="0" width="240" height="240"/>
+	</defs>
+	<clipPath id="SVGID_00000049221988924804011680000007265366384129972864_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000049221988924804011680000007265366384129972864_);">
+		<path class="st1" d="M-92.2,320.5l-47.2-452.1h518.8l-47.2,452.1l-212.8,51.1"/>
+		<path class="st2" d="M120.2,221.2L190,202l16.4-184.7h-86.2"/>
+		<path class="st3" d="M120.2,97.5H85.1l-2.3-27.2h37.5V44.1h-0.5H53.7l0.5,7l6.6,73.1h59.5V97.5H120.2z M120.2,166.4h-0.5l-29.5-8
+			l-1.9-21.1h-14H62.1l3.3,41.7l54.4,15h0.5v-27.6H120.2z"/>
+		<path class="st4" d="M119.8,97.5v26.7h32.8l-3.3,34.2l-29.5,8v27.7l54.4-15l0.5-4.7l6.1-69.8l0.9-7h-7.5L119.8,97.5L119.8,97.5z
+			 M119.8,44.1v16.4v9.8l0,0H184l0,0l0,0l0.5-5.6l1.4-13.6l0.5-7C186.4,44.1,119.8,44.1,119.8,44.1z"/>
+	</g>
 </g>
 </svg>
