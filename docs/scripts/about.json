@@ -12,18 +12,19 @@
             "id": "2",
             "title": "skills",
             "bio": "Ik ben aardig bekend met deze software. Vaak combineer ik de softwares als ik aan het werk ben omdat ze elkaar goed aanvullen.",
-            "avatar": ["https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_photoshop.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_illustrator.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/figma.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/HTML_logo-01.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/CSS-icon.svg"]
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/skills.png",
+            "icons": ["https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_photoshop.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_illustrator.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/figma.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/HTML_logo-01.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/CSS-icon.svg"]
          },
          {
             "id": "3",
             "title": "Hobbies",
             "bio": "Je bent vast bekend met het klassieke gezegde: maak van je hobby je werk. Ik ben vaak bezig met HTML/CSS en vind het leuk om leuke websites te maken.",
-            "avatar": ""
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/hobbies.png"
          },
          {
             "id": "4",
             "title": "Leuke Feitjes",
-            "avatar": ""
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/feitjes.png"
          }
     ]
 }
