@@ -3,31 +3,22 @@
 <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_00000146483169568500106270000005390246568534364579_);}
-	.st1{fill:#264DE4;}
-	.st2{fill:#2965F1;}
-	.st3{fill:#EBEBEB;}
-	.st4{fill:#FFFFFF;}
+	.st0{fill:#264DE4;}
+	.st1{fill:#2965F1;}
+	.st2{fill:#EBEBEB;}
+	.st3{fill:#FFFFFF;}
 </style>
-<g>
-	<defs>
-		<rect id="SVGID_1_" width="240" height="240"/>
-	</defs>
-	<clipPath id="SVGID_00000114067363748779653610000010925631827556123070_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	
-		<g id="layer1" transform="translate(-193.633,-276.3622)" style="clip-path:url(#SVGID_00000114067363748779653610000010925631827556123070_);">
-		<g id="g3013" transform="translate(119,276.3622)">
-			<polygon id="polygon2989" class="st1" points="511.7,-237.2 453.9,410 194.2,482 -64.7,410.1 -122.4,-237.2 			"/>
-			<polygon id="polygon2991" class="st2" points="258.9,197.8 274,28.6 194.6,28.6 194.6,215.6 			"/>
-			<polygon id="polygon2993" class="st3" points="138.1,102 140.3,126.3 194.6,126.3 194.6,102 			"/>
-			<polygon id="polygon2995" class="st3" points="194.6,52.9 194.5,52.9 133.7,52.9 135.9,77.2 194.6,77.2 			"/>
-			<polygon id="polygon2997" class="st3" points="194.6,190.4 194.6,165.1 194.5,165.2 167.5,157.9 165.7,138.5 152.6,138.5 
-				141.3,138.5 144.8,176.6 194.5,190.5 			"/>
-			<polygon id="polygon3005" class="st4" points="224.5,126.3 221.6,157.9 194.5,165.2 194.5,190.4 244.4,176.6 244.7,172.5 
-				250.4,108.6 251,102 255.4,52.9 194.5,52.9 194.5,77.2 228.8,77.2 226.6,102 194.5,102 194.5,126.3 			"/>
-		</g>
+<rect class="st0" width="240" height="240"/>
+<g id="layer1" transform="translate(-193.633,-276.3622)">
+	<g id="g3013" transform="translate(119,276.3622)">
+		<polygon id="polygon2989" class="st0" points="290.7,19.5 273.2,215.5 194.5,237.3 116.1,215.5 98.6,19.5 		"/>
+		<polygon id="polygon2991" class="st1" points="258.2,203 273.1,35.5 194.6,35.5 194.6,220.6 		"/>
+		<polygon id="polygon2993" class="st2" points="138.7,108.2 140.8,132.2 194.6,132.2 194.6,108.2 		"/>
+		<polygon id="polygon2995" class="st2" points="194.6,59.5 194.5,59.5 134.3,59.5 136.5,83.6 194.6,83.6 		"/>
+		<polygon id="polygon2997" class="st2" points="194.6,195.7 194.6,170.6 194.5,170.7 167.8,163.4 166,144.3 153,144.3 141.9,144.3 
+			145.3,182 194.5,195.7 		"/>
+		<polygon id="polygon3005" class="st3" points="224.2,132.2 221.4,163.4 194.5,170.7 194.5,195.7 243.8,182 244.2,178 249.8,114.7 
+			250.4,108.2 254.8,59.5 194.5,59.5 194.5,83.6 228.4,83.6 226.2,108.2 194.5,108.2 194.5,132.2 		"/>
 	</g>
 </g>
 </svg>
