@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
 
 :root {
-    --liefdes-kleur: red; 
+    --card-bio-color: black;
     --back-card-text: "Poppins", sans-serif;
     --h1-shadow: rgba(255, 217, 121, 0.614);
     --card-gold: goldenrod;
     --h1-title-font: 'Patua One', serif;
     --card-number: 'Libre Baskerville', serif;
     --front-title-card: 'Rubik Mono One', monospace;
-
+    --back-title-card: 'Archivo Black', sans-serif
 }
 
 html {
@@ -56,30 +56,30 @@ h1 {
     font-family: var(--h1-title-font);
     font-weight: 700;
     font-size: 5rem;
-    background: linear-gradient(180deg, var(--card-gold) 0, var(--card-gold)  40%, white 50%, rgb(255, 255, 255) 55%, white 59%, var(--card-gold)  60%, var(--card-gold)  100%);
+    background: linear-gradient(180deg, var(--card-gold) 0, var(--card-gold) 40%, white 50%, rgb(255, 255, 255) 55%, white 59%, var(--card-gold) 60%, var(--card-gold) 100%);
     background-size: 200% auto;
     color: #000;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    text-shadow: var(--h1-shadow) 0 0 20px;
+    text-shadow: var(--h1-shadow) 0 0 1.25rem;
 }
 
 main {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 section {
-    width: 280px;
-    height: 450px;
+    width: 17.5rem;
+    height: 28.125rem;
     position: relative;
-    perspective: 1000px;
+    perspective: 62.5rem;
     transition: 0.5s;
 }
 
@@ -101,7 +101,7 @@ section article .back p:nth-of-type(3) {
 section article .back p:nth-of-type(4) {
     position: absolute;
     flex-direction: column;
-    top: 365px;
+    top: 22.813rem;
     margin-left: 13rem;
     font-family: var(--card-number);
     font-size: 1.5rem;
@@ -114,13 +114,13 @@ section article .back svg {
     top: 3.4rem;
     left: 1.25rem;
     width: 1.875rem;
-    fill: linear-gradient(45deg, var(--card-gold)  0, rgb(113, 87, 21) 25%, var(--card-gold)  50%, rgb(113, 87, 21) 75%, var(--card-gold)  100%);
+    fill: linear-gradient(45deg, var(--card-gold) 0, rgb(113, 87, 21) 25%, var(--card-gold) 50%, rgb(113, 87, 21) 75%, var(--card-gold) 100%);
 }
 
 section:nth-of-type(3) .back p:nth-of-type(2) {
     position: absolute;
     flex-direction: column;
-    top: 365px;
+    top: 22.813rem;
     margin-left: 13rem;
     font-family: var(--card-number);
     font-size: 1.5rem;
@@ -131,8 +131,8 @@ section:nth-of-type(3) .back p:nth-of-type(2) {
 section:nth-of-type(3) .back p:nth-of-type(3) {
     position: absolute;
     flex-direction: column;
-    top: 0px;
-    left: -62px;
+    top: 0;
+    left: -3.875rem;
     font-family: var(--card-number);
     font-size: 1.5rem;
 }
@@ -142,12 +142,12 @@ section article .back svg:nth-of-type(2) {
     top: 22.2rem;
     width: 1.875rem;
     margin-left: 13rem;
-    fill: linear-gradient(45deg, var(--card-gold)  0, rgb(113, 87, 21) 25%, var(--card-gold)  50%, rgb(113, 87, 21) 75%, var(--card-gold)  100%);
+    fill: linear-gradient(45deg, var(--card-gold) 0, rgb(113, 87, 21) 25%, var(--card-gold) 50%, rgb(113, 87, 21) 75%, var(--card-gold) 100%);
 }
 
 
 section:nth-of-type(2) {
-    transform: translateX(-310px);
+    transform: translateX(-19.375rem);
     animation-name: sortCard-2;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
@@ -187,7 +187,7 @@ section:nth-of-type(2) article .back p:first-of-type img {
     width: 30%;
     flex-direction: row;
     margin: 0;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 section:nth-of-type(2) article .back h2 {
@@ -203,7 +203,7 @@ section:nth-of-type(3) article .back p:nth-of-type(2) {
 }
 
 section:nth-of-type(3) {
-    transform: translateX(-620px);
+    transform: translateX(-38.75rem);
     animation-name: sortCard-3;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -217,7 +217,7 @@ section:nth-of-type(3) p {
 }
 
 section:nth-of-type(4) {
-    transform: translateX(-930px);
+    transform: translateX(-58.125rem);
     animation-name: sortCard-4;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -237,7 +237,7 @@ section:nth-of-type(4) article .back p:nth-of-type(2) {
 section:nth-of-type(4) article .back p:nth-of-type(3) {
     position: absolute;
     flex-direction: column;
-    top: 365px;
+    top: 22.813rem;
     margin-left: 13rem;
     font-family: var(--card-number);
     font-size: 1.5rem;
@@ -247,10 +247,10 @@ section:nth-of-type(4) article .back p:nth-of-type(3) {
 
 
 section article .front div {
-    font-size: 24px;
-    width: 200px;
-    height: 380px;
-    border: solid var(--card-gold)  3px;
+    font-size: 1.5rem;
+    width: 12.5rem;
+    height: 23.75rem;
+    border: solid var(--card-gold) 0.188rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -259,13 +259,13 @@ section article .front div {
 }
 
 section:focus {
-    box-shadow: var(--card-gold) 0 0 20px;
+    box-shadow: var(--card-gold) 0 0 1.25rem;
 }
 
 section article .front p {
     margin: 0;
     width: 100%;
-    background: linear-gradient(45deg, var(--card-gold)  0, rgb(113, 87, 21) 25%, var(--card-gold)  50%, rgb(113, 87, 21) 75%, var(--card-gold)  100%);
+    background: linear-gradient(45deg, var(--card-gold) 0, rgb(113, 87, 21) 25%, var(--card-gold) 50%, rgb(113, 87, 21) 75%, var(--card-gold) 100%);
     text-align: center;
     padding: 0.5rem 0 0.5rem 0;
     font-family: var(--front-title-card);
@@ -293,10 +293,10 @@ div {
 }
 
 section article .back div {
-    color: black;
-    font-size: 24px;
-    width: 240px;
-    height: 380px;
+    color: var(--card-bio-color);
+    font-size: 1.5rem;
+    width: 150rem;
+    height: 23.75rem;
 }
 
 section article .back {
@@ -313,7 +313,7 @@ section:first-of-type article .back p:nth-of-type(2) {
 }
 
 section:hover {
-    transform: translateY(-30px);
+    transform: translateY(-1.875rem);
     transition: 0.5s;
 }
 
@@ -334,7 +334,7 @@ section:first-of-type .back .bio-El {
     font-size: 0.7rem;
     width: 70%;
     font-family: var(--back-card-text);
-    color: var(--liefdes-kleur);
+    color: var(--card-bio-color);
 
 }
 
@@ -363,7 +363,7 @@ figure {
     background: rgb(0, 0, 0);
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(70, 61, 36, 1) 25%, rgba(0, 0, 0, 1) 50%, rgba(70, 61, 36, 1) 75%, rgba(0, 0, 0, 1) 100%);
     z-index: 2;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .back {
@@ -372,7 +372,7 @@ figure {
     transform: rotateY(180deg);
     z-index: 1;
     /* Zorg ervoor dat de achterkant onder de voorkant wordt weergegeven */
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
 }
 
@@ -394,14 +394,14 @@ div {
 h2 {
     width: 30%;
     line-height: 1.3rem;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: var(--back-title-card);
     text-transform: uppercase;
     margin: 0 0 0;
 }
 
 section .avatarIcon {
     justify-self: center;
-    width: 120px;
+    width: 7.5rem;
     margin: 0;
 }
 
@@ -414,6 +414,16 @@ section:first-of-type .avatarIcon {
     font-size: 0.7rem;
     width: 70%;
 
+}
+
+
+footer {
+    background-color: var(--card-bio-color);
+    width: 100%;
+    color: var(--card-gold);
+    text-align: center;
+    font-family: var(--h1-title-font);
+    text-transform: uppercase;
 }
 
 
@@ -430,31 +440,31 @@ section:first-of-type .avatarIcon {
 
 @keyframes sortCard-2 {
     0% {
-        transform: translateX(-310px);
+        transform: translateX(-19.375rem);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(0rem);
     }
 }
 
 @keyframes sortCard-3 {
     0% {
-        transform: translateX(-620px);
+        transform: translateX(-38.75rem);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(0rem);
     }
 }
 
 @keyframes sortCard-4 {
     0% {
-        transform: translateX(-930px);
+        transform: translateX(-58.125rem);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(0rem);
     }
 }
 
@@ -464,7 +474,96 @@ section:first-of-type .avatarIcon {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 899px) {
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header img {
+        top: 1.5rem;
+    }
+
+    header img:nth-of-type(2) {
+        margin: 0;
+        left: 20rem;
+        top: 3rem;
+    }
+
+    header img:first-of-type {
+        margin: 0;
+        left: -2rem;
+        top: 3rem;
+    }
+
+    section:hover {
+        transform: translateX(0);
+    }
+
+    section:nth-of-type(2) {
+        animation: sortCard1000-2;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        transform: translate(-19rem, 0);
+    }
+
+    section:nth-of-type(3) {
+        animation: sortCard1000-3;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        transform: translate(-38rem, 0);
+    }
+
+    section:nth-of-type(4) {
+        animation: sortCard1000-4;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        transform: translate(-60rem, 10rem);
+    }
+
+    @keyframes sortCard1000-4 {
+
+        from {
+            transform: translate(-19rem, -30rem);
+        }
+
+        to {
+            transform: translate(0, 0);
+        }
+
+    }
+
+    @keyframes sortCard1000-3 {
+
+        from {
+            transform: translate(0, -30rem);
+        }
+
+        to {
+            transform: translate(0, 0rem);
+        }
+
+    }
+
+    @keyframes sortCard1000-2 {
+
+        from {
+            transform: translate(-19rem, 0);
+        }
+
+        to {
+            transform: translate(0, 0rem);
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 589px) {
 
     header h1 {
         font-size: 3rem;
@@ -490,64 +589,66 @@ section:first-of-type .avatarIcon {
         transform: translateX(0);
     }
 
-    section:nth-of-type(2){
+    section:nth-of-type(2) {
         animation: sortCard-vertically2;
         animation-duration: 1.5s;
         animation-fill-mode: forwards;
-        animation-delay: 2s;        
-        transform: translate(0, -430px);
+        animation-delay: 2s;
+        transform: translate(0, -26.875rem);
     }
 
-    section:nth-of-type(3){
+    section:nth-of-type(3) {
         animation: sortCard-vertically3;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
         animation-delay: 1.5s;
-        transform: translate(0, -840px);
+        transform: translate(0, -52.5rem);
     }
 
-    section:nth-of-type(4){
+    section:nth-of-type(4) {
         animation: sortCard-vertically4;
         animation-duration: 1s;
         animation-fill-mode: forwards;
         animation-delay: 1s;
-        transform: translate(0, -1250px);
+        transform: translate(0, -78.125rem);
     }
 
     @keyframes sortCard-vertically4 {
-        
-        from
-        {
-            transform: translate(0, -1250px);
+
+        from {
+            transform: translate(0, -78.125rem);
         }
+
         to {
-            transform: translate(0, 0px);
+            transform: translate(0, 0rem);
         }
 
     }
 
     @keyframes sortCard-vertically3 {
-        
-        from
-        {
-            transform: translate(0, -840px);
+
+        from {
+            transform: translate(0, -52.5rem);
         }
+
         to {
-            transform: translate(0, 0px);
+            transform: translate(0, 0rem);
         }
 
     }
 
     @keyframes sortCard-vertically2 {
-        
-        from
-        {
-            transform: translate(0, -430px);
+
+        from {
+            transform: translate(0, -26.875rem);
         }
+
         to {
-            transform: translate(0, 0px);
+            transform: translate(0, 0rem);
         }
 
     }
 
 }
+
+
