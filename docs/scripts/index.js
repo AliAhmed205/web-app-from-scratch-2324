@@ -3,49 +3,53 @@ const limit = 3;
 document.querySelectorAll('article').forEach(item => {
   item.addEventListener('click', () => {
     if (item.classList.contains('flip')) {
-      item.classList.remove('flip')
+      item.classList.remove('flip');
+      item.querySelector('.back p:first-of-type').classList.remove('active');
     } else {
       document.querySelectorAll('article').forEach(card => {
-        card.classList.remove('flip')
-      })
-      item.classList.add('flip')
+        card.classList.remove('flip');
+        card.querySelector('.back p:first-of-type').classList.remove('active');
+      });
+      item.classList.add('flip');
+      item.querySelector('.back p:first-of-type').classList.add('active');
     }
-  })
-})
+  });
+});
 
-fetchRandomFacts(1); 
+
+// fetchRandomFacts(1); 
 fetchData()
 
 
-function fetchRandomFacts(limit) {
-  const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; // Jouw API-sleutel hier
-  fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
-      method: 'GET',
-      headers: {
-          'X-Api-Key': apiKey,
-          'Content-Type': 'application/json'
-      }
-  })
-  .then(response => {
-      if (!response.ok) {
-          throw new Error('Network response was not ok');
-      }
-      return response.json();
-  })
-  .then(data => {
-      const factsElement = document.getElementById('factElement');
-      factsElement.textContent = ""; // Leeg maken van het element voor het geval er al inhoud in staat
-      data.forEach(fact => {
-          console.log(fact)
-          const paragraph = document.createElement('p');
-          paragraph.textContent = data[0].fact;
-          factsElement.appendChild(paragraph);
-      });
-  })
-  .catch(error => {
-      console.error('Fetch error:', error);
-  });
-}
+// function fetchRandomFacts(limit) {
+//   const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; // Jouw API-sleutel hier
+//   fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
+//       method: 'GET',
+//       headers: {
+//           'X-Api-Key': apiKey,
+//           'Content-Type': 'application/json'
+//       }
+//   })
+//   .then(response => {
+//       if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//       }
+//       return response.json();
+//   })
+//   .then(data => {
+//       const factsElement = document.getElementById('factElement');
+//       factsElement.textContent = ""; // Leeg maken van het element voor het geval er al inhoud in staat
+//       data.forEach(fact => {
+//           console.log(fact)
+//           const paragraph = document.createElement('p');
+//           paragraph.textContent = data[0].fact;
+//           factsElement.appendChild(paragraph);
+//       });
+//   })
+//   .catch(error => {
+//       console.error('Fetch error:', error);
+//   });
+// }
 
 
 
@@ -62,7 +66,7 @@ async function fetchData() {
       if (avatarIcon) {
         avatarIcon.src = data.cards[0].avatar
       }
-      card1.querySelector('.back h1').textContent = data.cards[0].title
+      card1.querySelector('.back h2').textContent = data.cards[0].title
       card1.querySelector('.back .bio-El').textContent = data.cards[0].bio
       if (data.cards[0].icons) {
         card1.querySelector('.back .linkedin').src = data.cards[0].icons[0]
@@ -79,7 +83,7 @@ async function fetchData() {
     const card2 = document.querySelector('main section:nth-child(2)')
     if (card2) {
       card2.querySelector('.back img').src = data.cards[1].avatar
-      card2.querySelector('.back h1').textContent = data.cards[1].title
+      card2.querySelector('.back h2').textContent = data.cards[1].title
       card2.querySelector('.back .bio-El').textContent = data.cards[1].bio
       if (data.cards[1].icons) {
         card2.querySelectorAll('.icon-El').forEach((icon, index) => {
@@ -94,7 +98,7 @@ async function fetchData() {
     const card3 = document.querySelector('main section:nth-child(3)')
     if (card3) {
       card3.querySelector('.back img').src = data.cards[2].avatar
-      card3.querySelector('.back h1').textContent = data.cards[2].title
+      card3.querySelector('.back h2').textContent = data.cards[2].title
       card3.querySelector('.back .bio-El').textContent = data.cards[2].bio
     }
 
@@ -102,7 +106,7 @@ async function fetchData() {
     const card4 = document.querySelector('main section:nth-child(4)')
     if (card4) {
       card4.querySelector('.back img').src = data.cards[3].avatar
-      card4.querySelector('.back h1').textContent = data.cards[3].title
+      card4.querySelector('.back h2').textContent = data.cards[3].title
     }
 
     console.log("Data successfully fetched and applied to cards.")
@@ -142,9 +146,9 @@ async function fetchData() {
 // async function updateTitles() {
 //   const cards = await fetchJSONdata()
 //   if (cards) {
-//       const h1Elements = document.querySelectorAll('h1')
-//       h1Elements.forEach((h1, index) => {
-//           h1.textContent = cards[index].title 
+//       const h2Elements = document.querySelectorAll('h2')
+//       h2Elements.forEach((h2, index) => {
+//           h2.textContent = cards[index].title 
 //       })
 //   }
 // }
