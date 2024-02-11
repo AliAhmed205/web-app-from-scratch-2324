@@ -38,7 +38,7 @@ header {
 /* Left sparkles on the title */ 
 header img:first-of-type {
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     left: -2.2rem;
     filter: brightness(10);
     mix-blend-mode: luminosity;
@@ -48,7 +48,7 @@ header img:first-of-type {
 /* Right sparkles on the title */ 
 header img:nth-of-type(2) {
     position: absolute;
-    top: 4rem;
+    top: 1rem;
     left: 25rem;
     filter: brightness(10);
     mix-blend-mode: luminosity;
@@ -69,6 +69,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     text-shadow: var(--h1-shadow) 0 0 1.25rem;
+    margin: 0;
 }
 
 /* MAIN SECTION */ 
@@ -81,6 +82,7 @@ main {
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 
 /* title of the backcards */ 
@@ -442,6 +444,8 @@ footer {
     text-align: center;
     font-family: var(--h1-title-font);
     text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
 }
 
 
@@ -501,27 +505,30 @@ footer {
 
     header h1 {
         font-size: 4rem;
+        margin: 1rem;
     }
 
-    header img {
-        top: 1.5rem;
-    }
+   section:last-of-type{
+    margin-bottom: 8rem;
+   }
+
 
     header img:nth-of-type(2) {
         margin: 0;
-        left: 20rem;
-        top: 3rem;
+        left: 21rem;
+        top: 1rem;
     }
 
     header img:first-of-type {
         margin: 0;
         left: -2rem;
-        top: 3rem;
+        top: 1rem;
     }
 
     section:hover {
         transform: translateX(0);
     }
+    
 
     section:nth-of-type(2) {
         animation: sortCard1000-2;
@@ -591,7 +598,7 @@ footer {
 @media screen and (max-width: 589px) {
 
     header h1 {
-        font-size: 3rem;
+        font-size: 3rem; 
     }
 
     header img {
@@ -600,14 +607,14 @@ footer {
 
     header img:nth-of-type(2) {
         margin: 0;
-        left: 14rem;
-        top: 1.5rem;
+        left: 15rem;
+        top: 0.6rem;
     }
 
     header img:first-of-type {
         margin: 0;
-        left: -2rem;
-        top: 1.5rem;
+        left: -1rem;
+        top: 0.6rem;
     }
 
     section:hover {
