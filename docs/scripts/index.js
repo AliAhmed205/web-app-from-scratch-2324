@@ -50,9 +50,9 @@ function updateCardData(data) {
     card1.querySelector('.back h2').textContent = data.cards[0].name;
     card1.querySelector('.back .bio-El').textContent = data.cards[0].bio;
     if (data.cards[0].socials) {
+      card1.querySelector('.back .discord').src = data.cards[0].socials.discord;
       card1.querySelector('.back .linkedin').src = data.cards[0].socials.linkedin;
       card1.querySelector('.back .github').src = data.cards[0].socials.github;
-      card1.querySelector('.back .discord').src = data.cards[0].socials.discord;
     }
   }
 
