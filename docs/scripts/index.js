@@ -21,7 +21,7 @@ document.querySelectorAll('article').forEach(item => {
 });
 
 // Function to fetch random facts using an API
-fetchRandomFacts(1); 
+// fetchRandomFacts(1); 
 fetchData();
 
 // Function to fetch data from a JSON API
@@ -39,6 +39,7 @@ async function fetchData() {
 
 // Function to update card elements with data from JSON
 function updateCardData(data) {
+  console.log(data)
   // CARD #1
   const card1 = document.querySelector('main section:nth-child(1)');
   if (card1) {
@@ -46,12 +47,12 @@ function updateCardData(data) {
     if (avatarIcon) {
       avatarIcon.src = data.cards[0].avatar;
     }
-    card1.querySelector('.back h2').textContent = data.cards[0].title;
+    card1.querySelector('.back h2').textContent = data.cards[0].name;
     card1.querySelector('.back .bio-El').textContent = data.cards[0].bio;
-    if (data.cards[0].icons) {
-      card1.querySelector('.back .linkedin').src = data.cards[0].icons[0];
-      card1.querySelector('.back .github').src = data.cards[0].icons[1];
-      card1.querySelector('.back .discord').src = data.cards[0].icons[2];
+    if (data.cards[0].socials) {
+      card1.querySelector('.back .linkedin').src = data.cards[0].socials.linkedin;
+      card1.querySelector('.back .github').src = data.cards[0].socials.github;
+      card1.querySelector('.back .discord').src = data.cards[0].socials.linkedin;
     }
   }
 
@@ -89,32 +90,32 @@ function updateCardData(data) {
 }
 
 // Function to fetch random facts using an external API
-function fetchRandomFacts(limit) {
-  const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; 
-  fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
-      method: 'GET',
-      headers: {
-          'X-Api-Key': apiKey,
-          'Content-Type': 'application/json'
-      }
-  })
-  .then(response => {
-      if (!response.ok) {
-          throw new Error('Network response was not ok');
-      }
-      return response.json();
-  })
-  .then(data => {
-      const factsElement = document.getElementById('factElement');
-      factsElement.textContent = ""; 
-      data.forEach(fact => {
-          console.log(fact)
-          const paragraph = document.createElement('p');
-          paragraph.textContent = data[0].fact;
-          factsElement.appendChild(paragraph);
-      });
-  })
-  .catch(error => {
-      console.error('Fetch error:', error);
-  });
-}
+// function fetchRandomFacts(limit) {
+//   const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; 
+//   fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
+//       method: 'GET',
+//       headers: {
+//           'X-Api-Key': apiKey,
+//           'Content-Type': 'application/json'
+//       }
+//   })
+//   .then(response => {
+//       if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//       }
+//       return response.json();
+//   })
+//   .then(data => {
+//       const factsElement = document.getElementById('factElement');
+//       factsElement.textContent = ""; 
+//       data.forEach(fact => {
+//           console.log(fact)
+//           const paragraph = document.createElement('p');
+//           paragraph.textContent = data[0].fact;
+//           factsElement.appendChild(paragraph);
+//       });
+//   })
+//   .catch(error => {
+//       console.error('Fetch error:', error);
+//   });
+// }
