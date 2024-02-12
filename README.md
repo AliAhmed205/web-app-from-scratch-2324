@@ -51,8 +51,18 @@ So instead of your obvious choices like: Facebook, Instagram and X, we went for 
 <b>🃏 Setting up the documents 🃏</b>
 </h2>
 
-<p>A few hours after the teams were setup, we instructed to fork the Web app from Scratch repository. After that, we had to head to our terminal (Or command prompt regarding our operating system) and write the following line:</p>
+<p>Shortly after the teams were established, we were instructed to fork the Web app from the Scratch repository. Following that, we needed to navigate to our terminal and specify the directory where we wanted to clone our repository. Once that's completed, enter the following command:</p>
 
-<picture>git clone https://github.com/AliAhmed205/web-app-from-scratch-2324<picture>
+<pre><code>git clone https://github.com/AliAhmed205/web-app-from-scratch-2324</code></pre>
+
+<p>You should see the following map with name <code>web-app-from-scratch-2324</code> in your local folder like this:</p> 
+<img width="700" alt="scherm-1" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/ef38b7f3-c6f8-4b72-86d6-f709c8fbcfea">
+<p>Inside  <code>web-app-from-scratch-2324</code>, you should see the following files: </p>
+<img width="330" alt="file-structure" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/49a5afcd-7f19-45e1-bb37-0ee4ee0b4ff4">
+<p><b>ongratulations, you're ready to develop your websi—</b></p>
+
+### 🚨 Not so fast! Coding without any sketches or concepts? Nice try. 🚨
+
+<img width="40%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/70c683bc-5f27-4997-9adf-2efcbc4f5b7f">
 
 
