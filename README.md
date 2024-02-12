@@ -1,68 +1,44 @@
-<p align="left">
-  <img src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/d4fd115c-0a00-4351-be5c-d7e704dd3ed5" alt="Description" width="70%">
-</p>
-<p align="left">
-<img src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/8bfc9430-8c85-46ab-b5f1-954f1a865afb" alt="day1" width="30%">
-</p>
-<a href="#team">Meet the team</a>
 
-<p align="left">
-<h1>🃏<b>Welcome to Web app from Scratch</b>🃏</h1>
-On the first day of the Web Design & Development minor, we collectively began with an introduction and a 'Race to the Finish' game. Subsequently, we had to choose our skill level and join the corresponding group. 
+<p align="center"><img width="80%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/77ff6549-30d0-41b0-a684-2b34a7032b8e" alt="Logo"></p>
+<p>Welcome to Deck of Ali, your personalized gateway to getting to know Ali better! Deck of Ali is a simple yet engaging web app that showcases four cards, each containing intriguing information about Ali. Whether you're curious about who Ali is, their skills, hobbies, or just want to discover some interesting facts, Deck of Ali has got you covered.</p>
 
-<b>So what's the assigment ?</b> 
+### 🃏 Why Deck of Ali? 🃏
+<p>Get to Know Ali Better. Deck of Ali offers a unique opportunity to learn more about Ali in a fun and interactive way. With just a flip of a card, you can delve into Ali's background, skills, and interests.</p>
 
-As students, we'll construct a web application, prioritizing the use of HTML, CSS & JavaScript over external resources like libraries and frameworks. Our goal is to create a modular, single-page web app (SPA) tailored to our skill levels and learning objectives. We'll fetch data from an external API, manipulate it for display, and apply familiar patterns in building and testing both our "individual web app" and our team "Web App". Through this process, we'll gain valuable insights into data management, algorithms, and the fundamentals of web development. Based on everyone's prior knowledge, groups were formed. Within my group, I proposed a concept centered around using a deck of cards to represent our team. Each card would hold data to be incorporated into our forthcoming .JSON file. 
-</p>
+<img width="100%" alt="Scherm­afbeelding 2024-02-12 om 23 54 33" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/d2f41664-1b5f-4c17-9bef-849d5e63277f" alt="">
 
-<h2 id="team" >🃏 Meet the team 🃏</h2>
-<p align="left" display="flex" width="30%">
-<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/aa2bcd25-ec83-4bf7-b559-2880dab9ac84" alt="Ali">
-<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/f0069bd1-9281-493a-9de9-4acd1548d44f" alt="Ufuk">
-<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/c09b7144-287d-4afb-b3c0-33a0bda20aa1" alt="Sena">
-<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/77cbdb40-4a7d-44c7-bba4-4c0735c5e40e" alt="Niels">
-<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/cf927a38-32d8-4a0d-8286-4a0262caa50a" alt="Fayaaz">
+
+### 🃏 Engaging User Experience 🃏
+<p>The design of Deck of Ali is both visually appealing and user-friendly, making it enjoyable to explore and interact with. The consistent back of the cards adds a delightful element of surprise as you reveal new information with each flip.</p>
+<p>
+<img src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/4d4fd5f3-d9d0-437f-b032-1c2fd3a83fa7" alt="">
+
 </p>
 
-<h2 align="left">
-<b>What sort of data would we aim to fetch?</b>
-</h2>
+### 🃏 Convenient Data Management 🃏
+<p>Most of the information presented on Deck of Ali is dynamically generated from a JSON file, making it easy to update and customize. This means you can easily apply this format to showcase your own data, making it a versatile tool for personal branding or sharing information about yourself.</p>
+<img width="1118" alt="Scherm­afbeelding 2024-02-13 om 00 08 11" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/b8c885e0-6ff2-4b5c-8f79-c0061d0f2f7c">
 
-<p align="left">
-Good question! We weren't so sure either...
 
-Still, we quickly grabbed a piece of paper and set out to brainstorm a range of subjects that could be used to represent ourselves.
-As we began writing down our details like names, ages, and social media handles, we realizedthat we could integrate our developer expertise into the mix.
-So instead of your obvious choices like: Facebook, Instagram and X, we went for <b>Discord, Linkedin and GitHub</b>. Instead of a stock image-y of ourselves, we either generated/designed our own avatars or made use of our digital memoji-selves. 
-</p>
+### 🃏 Features 🃏
+<p><b>Personalized Cards</b> - Each card reveals different aspects of Ali's personality and interests.</p>
+<p><b>Interactive Flipping</b> - Simply click or tap on a card to flip and reveal the information.</p>
+<p><b>Dynamic Data Handling</b> - The majority of the content is fetched from a JSON file, allowing for easy customization and updates.</p>
+<p><b>API Integration</b> - One of the cards showcases interesting facts fetched from an external API, adding a touch of novelty and intrigue.</p>
 
-<p align="left">
-<b>Presented here is the data we chose to include in our personal .JSON file:</b>
-</p>
+### 🃏 Early concepts 🃏
+<p>The design journey of Deck of Ali began with conceptual sketches, which were then translated into digital mockups using Figma. These mockups not only visualize the layout and aesthetics of the web app but also include annotations indicating potential HTML elements such as images (img), paragraphs (p), and sections. For a detailed breakdown of each stage of the design process, including insights into decision-making, challenges faced, and lessons learned, please refer to my comprehensive design process document. This document provides an in-depth exploration of the journey from concept to realization, offering valuable insights for fellow designers and enthusiasts alike.</p>
 
-<p>🃏 Name</p>
-<p>🃏 Age</p>
-<p>🃏 Avatar</p>
-<p>🃏 Socials (Like Discord, GitHub and Linkedin)</p>
+<img width="30%" alt="deck-of-cards-1" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/60e99d09-ecdc-4a55-b1c8-d3508e23e6d3">
+<img width="30%" alt="back-detail" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/7f879aef-7377-41cb-9056-15947c92feb2">
+<img width="30%" alt="CSS-JS settings" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/d3106a26-e4e3-4bbe-86f7-888ad5960444">
+<img width="30%" alt="front-details" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/3ab08cb0-a6d9-4f41-9557-23f469a4b594">
+<img width="300px" height="200px" alt="Scherm­afbeelding 2024-02-13 om 00 12 35" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/b20cd607-cd22-4bc6-b3f0-0ecd667c083e">
 
-<img width="30%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/2821cf0f-52b5-4a6d-96f9-23d0f8982e94" alt="plan">
 
-<h2 align="left">
-<b>🃏 Setting up the documents 🃏</b>
-</h2>
+### 🃏 Technologies Used 🃏
+<p>Deck of Ali is built using JavaScript, CSS, and HTML, ensuring compatibility across various browsers and devices while maintaining a seamless and responsive experience.</p>
+<img width="50%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/4ee4d9f8-955f-4149-a928-662bdce27f2d" alt="">
 
-<p>Shortly after the teams were established, we were instructed to fork the Web app from the Scratch repository. Following that, we needed to navigate to our terminal and specify the directory where we wanted to clone our repository. Once that's completed, enter the following command:</p>
-
-<pre><code>git clone https://github.com/AliAhmed205/web-app-from-scratch-2324</code></pre>
-
-<p>You should see the following map with name <code>web-app-from-scratch-2324</code> in your local folder like this:</p> 
-<img width="700" alt="scherm-1" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/ef38b7f3-c6f8-4b72-86d6-f709c8fbcfea">
-<p>Inside  <code>web-app-from-scratch-2324</code>, you should see the following files: </p>
-<img width="330" alt="file-structure" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/49a5afcd-7f19-45e1-bb37-0ee4ee0b4ff4">
-<p><b>ongratulations, you're ready to develop your websi—</b></p>
-
-### 🚨 Not so fast! Coding without any sketches or concepts? Nice try. 🚨
-
-<img width="40%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/70c683bc-5f27-4997-9adf-2efcbc4f5b7f">
-
+### Explore Deck of Ali today and discover the many facets of Ali's world!
 
