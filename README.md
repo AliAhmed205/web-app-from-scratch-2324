@@ -16,16 +16,12 @@ As students, we'll construct a web application, prioritizing the use of HTML, CS
 </p>
 
 <h2 id="team" >🃏 Meet the team 🃏</h2>
-<p align="left" display="flex" width="30%"><img width="15%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/b369ec69-da8f-438e-8ae8-be9628779c6a" alt="Ali">
-Ali
-<img width="15%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/4a149715-bc5f-4605-a50d-2d48632c6f96" alt="Ufuk">
-Ufuk
-<img width="15%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/502d567e-c9d6-4df6-9e37-bf5597e4ddc9" alt="Sena">
-Sena
-<img width="15%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/d702f245-f340-4c08-979c-11de0a9e10ae" alt="Niels">
-Niels
-<img width="15%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/f64c54dd-49db-4808-bd5c-ab073e7c2981" alt="Fayaaz">
-Fayaaz
+<p align="left" display="flex" width="30%">
+<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/aa2bcd25-ec83-4bf7-b559-2880dab9ac84" alt="Ali">
+<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/f0069bd1-9281-493a-9de9-4acd1548d44f" alt="Ufuk">
+<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/c09b7144-287d-4afb-b3c0-33a0bda20aa1" alt="Sena">
+<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/77cbdb40-4a7d-44c7-bba4-4c0735c5e40e" alt="Niels">
+<img width="12%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/cf927a38-32d8-4a0d-8286-4a0262caa50a" alt="Fayaaz">
 </p>
 
 <h2 align="left">
@@ -48,7 +44,15 @@ So instead of your obvious choices like: Facebook, Instagram and X, we went for 
 <p>🃏 Age</p>
 <p>🃏 Avatar</p>
 <p>🃏 Socials (Like Discord, GitHub and Linkedin)</p>
-<p>🃏 Name</p>
-<p>🃏 Name</p>
+
+<img width="30%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/2821cf0f-52b5-4a6d-96f9-23d0f8982e94" alt="plan">
+
+<h2 align="left">
+<b>🃏 Setting up the documents 🃏</b>
+</h2>
+
+<p>A few hours after the teams were setup, we instructed to fork the Web app from Scratch repository. After that, we had to head to our terminal (Or command prompt regarding our operating system) and write the following line:</p>
+
+<picture>git clone https://github.com/AliAhmed205/web-app-from-scratch-2324<picture>
 
 
