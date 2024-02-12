@@ -39,7 +39,7 @@ async function fetchData() {
 
 // Function to update card elements with data from JSON
 function updateCardData(data) {
-  console.log(data)
+  console.log(data.cards[0].socials)
   // CARD #1
   const card1 = document.querySelector('main section:nth-child(1)');
   if (card1) {
