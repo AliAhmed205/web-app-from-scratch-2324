@@ -52,7 +52,7 @@ function updateCardData(data) {
     if (data.cards[0].socials) {
       card1.querySelector('.back .linkedin').src = data.cards[0].socials.linkedin;
       card1.querySelector('.back .github').src = data.cards[0].socials.github;
-      card1.querySelector('.back .discord').src = data.cards[0].socials.linkedin;
+      card1.querySelector('.back .discord').src = data.cards[0].socials.discord;
     }
   }
 
