@@ -52,8 +52,6 @@ function updateCardData(data) {
     }
     card1.querySelector('.back h2').textContent = data.cards[0].name;
     card1.querySelector('.back .bio-El').textContent = data.cards[0].bio;
-    if (data.cards[0].socials) {
-    }
   }
 
   // CARD #2
