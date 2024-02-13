@@ -34,7 +34,7 @@
 <p>
 <a href="#personalized-cards">Personalized Cards</a> - Each card reveals different aspects of Ali's personality and interests.</p>
 <a href="#interactive-flipping">Interactive Flipping</a> - Simply click or tap on a card to flip and reveal the information.</p>
-<a href="#dynamic-data-handling">Dynamic Data Handling<</a> - The majority of the content is fetched from a JSON file, allowing for easy customization and updates.</p>
+<a href="#dynamic-data-handling">Dynamic Data Handling</a> - The majority of the content is fetched from a JSON file, allowing for easy customization and updates.</p>
 <a href="#api-integration">API Integration</a> - One of the cards showcases interesting facts fetched from an external API, adding a touch of novelty and intrigue.</p>
 </p>
 
