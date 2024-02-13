@@ -446,6 +446,28 @@ footer {
     text-transform: uppercase;
     position: fixed;
     bottom: 0;
+    padding: 1.5rem;
+}
+
+footer h6 {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+a {
+    color: var(--card-gold);
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    text-shadow: var(--card-gold) 0 0 10px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: white;
+    transition: 0.5s;
+    text-shadow: var(--card-gold) 0 0 10px;
 }
 
 
@@ -536,6 +558,11 @@ footer {
         animation-fill-mode: forwards;
         animation-delay: 2s;
         transform: translate(-19rem, 0);
+    }
+
+    a {
+        font-size: 1rem;
+        text-shadow: var(--card-gold) 0 0 5px;
     }
 
     section:nth-of-type(3) {
