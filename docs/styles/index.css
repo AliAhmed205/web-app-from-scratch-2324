@@ -45,6 +45,36 @@ header {
     position: relative;
 }
 
+.sparkDecor:first-of-type {
+    opacity: 0;
+    position: absolute;
+    filter: brightness(10);
+    mix-blend-mode: luminosity;
+    top: -50px;
+    z-index: 99;
+    width: 100px;
+    left: -50px;
+    transition: 0.5s;
+}
+
+.sparkDecor:nth-of-type(2) {
+    opacity: 0;
+    position: absolute;
+    filter: brightness(10);
+    mix-blend-mode: luminosity;
+    top: 400px;
+    z-index: 99;
+    width: 90px;
+    left: 230px;
+    transition: 0.5s;
+}
+
+button:focus .sparkDecor {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
 /* Left sparkles on the title */ 
 header img:first-of-type {
     position: absolute;
@@ -91,7 +121,7 @@ main {
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
     padding-bottom: 5rem;
 }
 
@@ -131,7 +161,6 @@ section {
     height: 28.125rem;
     position: relative;
     perspective: 62.5rem;
-    transition: 0.5s;
 }
 
 /*Exceptional styling for the first Avatar on the first card */
@@ -159,6 +188,10 @@ section:first-of-type .back p:nth-of-type(2) img {
 section:first-of-type .back img:nth-of-type(2) {
     transform: rotate(360deg);
     margin: 0;
+}
+
+section button {
+    transition: 0.5s;
 }
 
 
@@ -416,6 +449,11 @@ button.flip {
     z-index: 3;
 }
 
+button:focus.flip {
+    transform: rotateY(180deg);
+    z-index: 3;
+}
+
 /* Mirroring both buttons through position absolute with the same width and height */ 
 span {
     width: 100%;
@@ -448,6 +486,8 @@ span {
     /* Zorg ervoor dat de achterkant onder de voorkant wordt weergegeven */
     border-radius: 0.625rem;
     top: 0;
+    z-index: 3;
+    opacity: 1;
 }
 
 button {
@@ -459,7 +499,9 @@ button:focus {
     box-shadow: var(--card-gold) 0 0 30px;
     border: var(--card-gold);
     outline: none !important;
+    transform: translateY(-1.875rem);
 }
+
 
 /* FOOTER SECTION */ 
 
@@ -484,7 +526,8 @@ footer p {
 }
 
 footer p a {
-    width: 2%;
+    width: 30px;
+    transition: 0.5s;
 }
 
 footer h6 {
@@ -493,7 +536,7 @@ footer h6 {
 }
 
 
-a {
+footer > a {
     color: var(--card-gold);
     text-align: center;
     margin: 0;
@@ -503,17 +546,29 @@ a {
     transition: 0.5s;
 }
 
-a:hover {
+footer > a:hover {
     color: white;
     transition: 0.5s;
     text-shadow: var(--card-gold) 0 0 10px;
 }
 
-a:focus {
+footer > a:focus {
     color: white;
     transition: 0.5s;
-    text-shadow: var(--card-gold) 0 0 10px;
+    text-shadow: var(--card-gold) 0 0 40px;
+    outline: none !important;
 }
+
+footer p a:focus {
+    box-shadow: var(--card-gold) 0 0 30px;
+    border: var(--card-gold);
+    outline: none !important;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+
+
 
 
 
@@ -753,6 +808,10 @@ a:focus {
             transform: translate(0, 0rem);
         }
 
+    }
+
+    footer > a {
+        font-size: 1rem;
     }
 
 }
