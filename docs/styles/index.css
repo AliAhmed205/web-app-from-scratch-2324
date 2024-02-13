@@ -6,11 +6,21 @@
     --card-bio-color: black;
     --back-card-text: "Poppins", sans-serif;
     --h1-shadow: rgba(255, 217, 121, 0.614);
-    --card-gold: goldenrod;
+    --card-gold: #daa520;
     --h1-title-font: 'Patua One', serif;
     --card-number: 'Libre Baskerville', serif;
     --front-title-card: 'Rubik Mono One', monospace;
     --back-title-card: 'Archivo Black', sans-serif
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
 }
 
 html {
@@ -131,24 +141,15 @@ section:first-of-type .avatarIcon {
 
 /* Coloring of the diamonds SVG */ 
 .diamondColor {
-    fill: url(#SVGID_1_);
+    fill: url(#diamondGradient);
 }
 
-/* The First Card styling */ 
-section:first-of-type article .back p:nth-of-type(2) {
-    display: flex;
-    width: 12%;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-    margin: 0 0 0.5rem 0;
-}
+
 section:first-of-type .back .bio-El {
     font-size: 0.7rem;
     width: 70%;
     font-family: var(--back-card-text);
     color: var(--card-bio-color);
-
 }
 
 section:first-of-type .back p:nth-of-type(2) img {
@@ -162,7 +163,7 @@ section:first-of-type .back img:nth-of-type(2) {
 
 
 /*  General Styling of the numbers on the cards (top-left) */ 
-section article .back p:nth-of-type(3) {
+section button .back p:nth-of-type(3) {
     position: absolute;
     flex-direction: column;
     top: 0;
@@ -172,8 +173,21 @@ section article .back p:nth-of-type(3) {
     margin: 9;
 }
 
+section:first-of-type button .back p:nth-of-type(2) {
+    position: absolute;
+    flex-direction: column;
+    top: 22.813rem;
+    margin-left: 13rem;
+    font-family: var(--card-number);
+    font-size: 1.5rem;
+    margin: 9;
+    transform: rotate(180deg);
+}
+
+
+
 /* (Expectional) Styling of the numbers on the fourth card */ 
-section article .back p:nth-of-type(4) {
+section button .back p:nth-of-type(4) {
     position: absolute;
     flex-direction: column;
     top: 22.813rem;
@@ -185,7 +199,7 @@ section article .back p:nth-of-type(4) {
 }
 
 /* General styling of the numbers on each card */ 
-section article .back svg {
+section button .back svg {
     position: absolute;
     top: 3.4rem;
     left: 1.25rem;
@@ -215,7 +229,7 @@ section:nth-of-type(3) .back p:nth-of-type(3) {
 }
 
 /* General Styling of the numbers on the third card (top-left) */ 
-section article .back svg:nth-of-type(2) {
+section button .back svg:nth-of-type(2) {
     position: absolute;
     top: 22.2rem;
     width: 1.875rem;
@@ -233,7 +247,7 @@ section:nth-of-type(2) {
 }
 
 /* Flex-box of Applications on the second card */ 
-section:nth-of-type(2) article .back p:first-of-type {
+section:nth-of-type(2) button .back p:first-of-type {
     width: 50%;
     flex-direction: row;
     margin: 1rem 0 0 0;
@@ -242,7 +256,7 @@ section:nth-of-type(2) article .back p:first-of-type {
 }
 
 /* Text (Bio) on the second card */ 
-section:nth-of-type(2) article .back p:nth-of-type(2) {
+section:nth-of-type(2) button .back p:nth-of-type(2) {
     width: 70%;
     font-family: var(--back-card-text);
     font-size: 0.7rem;
@@ -250,7 +264,7 @@ section:nth-of-type(2) article .back p:nth-of-type(2) {
 }
 
 /* Override application icons rotation and styling */ 
-section:nth-of-type(2) article .back p:first-of-type img {
+section:nth-of-type(2) button .back p:first-of-type img {
     transform: rotate(0deg);
     width: 30%;
     flex-direction: row;
@@ -266,17 +280,17 @@ section:nth-of-type(2) article .back p:first-of-type img {
     animation-delay: 1s;
 }
 /* Added white-space on top of the H2-element of the second card */ 
-section:nth-of-type(2) article .back h2 {
+section:nth-of-type(2) button .back h2 {
     margin-top: 1rem;
 }
 
 /* width of the h2-title of the third card */ 
-section:nth-of-type(3) article .back h2 {
+section:nth-of-type(3) button .back h2 {
     width: 100%;
 }
 
 /* width of the h2-title of the third card */ 
-section:nth-of-type(3) article .back p:nth-of-type(2) {
+section:nth-of-type(3) button .back p:nth-of-type(2) {
     width: 100%;
 }
 
@@ -306,7 +320,7 @@ section:nth-of-type(4) {
 }
 
 /* (Exceptional) Styling of the number on the fourth card (top-left) */ 
-section:nth-of-type(4) article .back p:nth-of-type(2) {
+section:nth-of-type(4) button .back p:nth-of-type(2) {
     position: absolute;
     flex-direction: column;
     top: 0;
@@ -317,7 +331,7 @@ section:nth-of-type(4) article .back p:nth-of-type(2) {
 }
 
 /* (Exceptional) Styling of the number on the fourth card (bottom-right) */ 
-section:nth-of-type(4) article .back p:nth-of-type(3) {
+section:nth-of-type(4) button .back p:nth-of-type(3) {
     position: absolute;
     flex-direction: column;
     top: 22.813rem;
@@ -329,7 +343,7 @@ section:nth-of-type(4) article .back p:nth-of-type(3) {
 }
 
 /* Styling of the inside border inside the front */ 
-section article .front div {
+section button .front div {
     font-size: 1.5rem;
     width: 12.5rem;
     height: 23.75rem;
@@ -347,7 +361,7 @@ section:focus {
 }
 
 /* Styling of the inside border inside the front (NOT WORKING) */ 
-section article .front p {
+section button .front p {
     margin: 0;
     width: 100%;
     background: linear-gradient(45deg, var(--card-gold) 0, rgb(113, 87, 21) 25%, var(--card-gold) 50%, rgb(113, 87, 21) 75%, var(--card-gold) 100%);
@@ -358,37 +372,37 @@ section article .front p {
 }
 
 /* Overriding the front title of the third card */ 
-section:nth-of-type(3) article .front p {
+section:nth-of-type(3) button .front p {
     font-size: 1em;
 }
 
 /* General positioning of the pharaoh heads */ 
-section article img {
+section button img {
     width: 8rem;
     margin-top: 1rem;
     justify-self: center;
 }
 
 /* Positioning of the bottom pharaoh heads */ 
-section article .front img:nth-of-type(2) {
+section button .front img:nth-of-type(2) {
     transform: rotate(180deg);
     margin-top: 0;
 }
 
 /* To get all items top to bottom */ 
-section article .back {
+section button .back {
     flex-direction: column;
 }
 
 
 /* To get all items top to bottom (For some reason NOT applied to the other sections?) */ 
-article:hover {
+button:hover {
     transform: translateY(-1.875rem);
     transition: 0.5s;
 }
 
-/* Article containing all elements, but being the child of it's parent section to remain inside */ 
-article {
+/* button containing all elements, but being the child of it's parent section to remain inside */ 
+button {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -397,13 +411,13 @@ article {
 }
 
 /* Applied flip class once a card gets clicked */ 
-article.flip {
+button.flip {
     transform: rotateY(180deg);
     z-index: 3;
 }
 
-/* Mirroring both figures through position absolute with the same width and height */ 
-figure {
+/* Mirroring both buttons through position absolute with the same width and height */ 
+span {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -421,19 +435,31 @@ figure {
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(70, 61, 36, 1) 25%, rgba(0, 0, 0, 1) 50%, rgba(70, 61, 36, 1) 75%, rgba(0, 0, 0, 1) 100%);
     z-index: 2;
     border-radius: 0.625rem;
+    top: 0;
+    left: 0;
 }
 
 /* Back figure styling */ 
 .back {
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(238, 235, 227) 54%, rgba(255, 255, 255, 1) 100%);
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateZ(1px);
     z-index: 1;
     /* Zorg ervoor dat de achterkant onder de voorkant wordt weergegeven */
     border-radius: 0.625rem;
-
+    top: 0;
 }
 
+button {
+    border: none;
+    border-radius: 0.625rem;
+}
+
+button:focus {
+    box-shadow: var(--card-gold) 0 0 30px;
+    border: var(--card-gold);
+    outline: none !important;
+}
 
 /* FOOTER SECTION */ 
 
@@ -446,13 +472,26 @@ footer {
     text-transform: uppercase;
     position: fixed;
     bottom: 0;
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
+}
+    
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin: 0;
+    gap: 1rem;
+}
+
+footer p a {
+    width: 2%;
 }
 
 footer h6 {
     margin: 0;
     margin-top: 0.5rem;
 }
+
 
 a {
     color: var(--card-gold);
@@ -469,6 +508,14 @@ a:hover {
     transition: 0.5s;
     text-shadow: var(--card-gold) 0 0 10px;
 }
+
+a:focus {
+    color: white;
+    transition: 0.5s;
+    text-shadow: var(--card-gold) 0 0 10px;
+}
+
+
 
 
 /* Animation of the cards for Desktop */ 

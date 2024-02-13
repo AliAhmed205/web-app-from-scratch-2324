@@ -1,18 +1,18 @@
-// Function to handle flipping articles on click
-document.querySelectorAll('article').forEach(item => {
+// Function to handle flipping buttons on click
+document.querySelectorAll('button').forEach(item => {
   item.addEventListener('click', () => {
     if (item.classList.contains('flip')) {
-      // Remove 'flip' class from clicked article
+      // Remove 'flip' class from clicked button
       item.classList.remove('flip');
       // Remove 'active' class from the first paragraph inside '.back'
       item.querySelector('.back p:first-of-type').classList.remove('active');
     } else {
-      // Remove 'flip' class from all articles
-      document.querySelectorAll('article').forEach(card => {
+      // Remove 'flip' class from all buttons
+      document.querySelectorAll('button').forEach(card => {
         card.classList.remove('flip');
         card.querySelector('.back p:first-of-type').classList.remove('active');
       });
-      // Add 'flip' class to clicked article
+      // Add 'flip' class to clicked button
       item.classList.add('flip');
       // Add 'active' class to the first paragraph inside '.back'
       item.querySelector('.back p:first-of-type').classList.add('active');
@@ -21,7 +21,7 @@ document.querySelectorAll('article').forEach(item => {
 });
 
 // Function to fetch random facts using an API
-fetchRandomFacts(1);
+// fetchRandomFacts(1);
 
 fetchData();
 
@@ -51,9 +51,6 @@ function updateCardData(data) {
     card1.querySelector('.back h2').textContent = data.cards[0].name;
     card1.querySelector('.back .bio-El').textContent = data.cards[0].bio;
     if (data.cards[0].socials) {
-      card1.querySelector('.back .discord').src = data.cards[0].socials.discord;
-      card1.querySelector('.back .linkedin').src = data.cards[0].socials.linkedin;
-      card1.querySelector('.back .github').src = data.cards[0].socials.github;
     }
   }
 
@@ -87,36 +84,42 @@ function updateCardData(data) {
     card4.querySelector('.back h2').textContent = data.cards[3].title;
   }
 
+  const socials = document.querySelector('footer p');
+  if(socials) {
+    socials.querySelector('.discord').src = data.cards[0].socials.discord;
+    socials.querySelector('.linkedin').src = data.cards[0].socials.linkedin;
+    socials.querySelector('.github').src = data.cards[0].socials.github;
+}
   console.log("Data successfully fetched and applied to cards.");
 }
 
 // Function to fetch random facts using an external API
-function fetchRandomFacts(limit) {
-  const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; 
-  fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
-      method: 'GET',
-      headers: {
-          'X-Api-Key': apiKey,
-          'Content-Type': 'application/json'
-      }
-  })
-  .then(response => {
-      if (!response.ok) {
-          throw new Error('Network response was not ok');
-      }
-      return response.json();
-  })
-  .then(data => {
-      const factsElement = document.getElementById('factElement');
-      factsElement.textContent = ""; 
-      data.forEach(fact => {
-          console.log(fact);
-          const paragraph = document.createElement('p');
-          paragraph.textContent = data[0].fact;
-          factsElement.appendChild(paragraph);
-      });
-  })
-  .catch(error => {
-      console.error('Fetch error:', error);
-  });
-}
+// function fetchRandomFacts(limit) {
+//   const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; 
+//   fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
+//       method: 'GET',
+//       headers: {
+//           'X-Api-Key': apiKey,
+//           'Content-Type': 'application/json'
+//       }
+//   })
+//   .then(response => {
+//       if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//       }
+//       return response.json();
+//   })
+//   .then(data => {
+//       const factsElement = document.getElementById('factElement');
+//       factsElement.textContent = ""; 
+//       data.forEach(fact => {
+//           console.log(fact);
+//           const paragraph = document.createElement('p');
+//           paragraph.textContent = data[0].fact;
+//           factsElement.appendChild(paragraph);
+//       });
+//   })
+//   .catch(error => {
+//       console.error('Fetch error:', error);
+//   });
+// }
