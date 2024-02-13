@@ -21,7 +21,8 @@ document.querySelectorAll('article').forEach(item => {
 });
 
 // Function to fetch random facts using an API
-fetchRandomFacts(1); 
+fetchRandomFacts(1);
+
 fetchData();
 
 // Function to fetch data from a JSON API
@@ -39,7 +40,7 @@ async function fetchData() {
 
 // Function to update card elements with data from JSON
 function updateCardData(data) {
-  console.log(data.cards[0].socials)
+  console.log(data.cards[0].socials);
   // CARD #1
   const card1 = document.querySelector('main section:nth-child(1)');
   if (card1) {
@@ -109,7 +110,7 @@ function fetchRandomFacts(limit) {
       const factsElement = document.getElementById('factElement');
       factsElement.textContent = ""; 
       data.forEach(fact => {
-          console.log(fact)
+          console.log(fact);
           const paragraph = document.createElement('p');
           paragraph.textContent = data[0].fact;
           factsElement.appendChild(paragraph);

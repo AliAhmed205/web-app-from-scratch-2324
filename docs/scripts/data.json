@@ -1,12 +1,13 @@
 {
-    "firstnames": "Ali",
+    "firstName": "Ali",
     "LastName" : "Ahmed",
     "avatar_url" : "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/pixel-memoji.png",
     "age" : 23,
     "city" : "Amsterdam",
     "hobbies" : ["Art", "Gaming", "Coding", "Exercising"],
-    "truthAndLies": ["Ik ben bang", "serieus, ik ben echt bang", "ik ben niet bang"],
+    "truthAndLies": ["I hate myself", "I hate everyone", "I love everyone, and myself and literally the whole world."],
     "bio": "I'm Ali Ahmed, 23 years old. I'm from Egypt but was born and raised in the Netherlands. With a background in design, I'm now eager to delve more into the technical side.",
-    "favouriteAnimal": "Slangen"
+    "favouriteAnimal": "Snakes, cuz I'm one myself"
  }
  
+
