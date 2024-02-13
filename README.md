@@ -45,18 +45,87 @@
 
 <img id="interactive-flipping" width="70%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/6aad03a9-d618-47dd-b448-cfa52b55ada8" alt="">
 <p>The code enables flipping articles/cards upon click events. It iterates through all the articles on the page, adding event listeners to each one. When an article is clicked, it toggles the "flip" class on the clicked article. Additionally, it ensures that only the clicked article's back content is displayed while others are hidden.
-<br>
+
+```javascript
+document.querySelectorAll('article').forEach(item => {
+  item.addEventListener('click', () => {
+    if (item.classList.contains('flip')) {
+      // Remove 'flip' class from clicked article
+      item.classList.remove('flip');
+      // Remove 'active' class from the first paragraph inside '.back'
+      item.querySelector('.back p:first-of-type').classList.remove('active');
+    } else {
+      // Remove 'flip' class from all articles
+      document.querySelectorAll('article').forEach(card => {
+        card.classList.remove('flip');
+        card.querySelector('.back p:first-of-type').classList.remove('active');
+      });
+      // Add 'flip' class to clicked article
+      item.classList.add('flip');
+      // Add 'active' class to the first paragraph inside '.back'
+      item.querySelector('.back p:first-of-type').classList.add('active');
+    }
+  });
+});
+```
 <br>
 <img width="20%" src="https://i.stack.imgur.com/pU4rt.gif" alt="">
 </p>
-
+<br>
 <img id="dynamic-data-handling" width="80%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/f9ff01f4-4536-4518-88da-dcf99eb32b59">
 <p>The fetchData() function asynchronously fetches data from a JSON API endpoint (https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/scripts/about.json). Once the data is fetched successfully, it updates the content of each card element on the page based on the retrieved data. Each card represents different information about me, including my name, bio, socials, and avatar.
-</p>
+<br>
 
+```javascript
+async function fetchData() {
+  try {
+    const response = await fetch('https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/scripts/about.json');
+    const data = await response.json();
+
+    // Update card elements with data from JSON
+    updateCardData(data);
+  } catch (error) {
+    console.error('Error in JSON', error);
+  }
+}
+```
+</p>
+<br>
 <br>
 <img id="api-integration" width="90%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/e7d3fef9-3130-4034-9930-d91907e58670" alt="">
 <p>The fetchRandomFacts() function fetches random facts from an external API (https://api.api-ninjas.com/v1/facts). It accepts a limit parameter to specify the number of facts to fetch. The retrieved facts are then displayed on the page within an element with the ID "factElement."</p>
+
+```javascript
+function fetchRandomFacts(limit) {
+  const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; 
+  fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
+      method: 'GET',
+      headers: {
+          'X-Api-Key': apiKey,
+          'Content-Type': 'application/json'
+      }
+  })
+  .then(response => {
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      return response.json();
+  })
+  .then(data => {
+      const factsElement = document.getElementById('factElement');
+      factsElement.textContent = ""; 
+      data.forEach(fact => {
+          console.log(fact);
+          const paragraph = document.createElement('p');
+          paragraph.textContent = data[0].fact;
+          factsElement.appendChild(paragraph);
+      });
+  })
+  .catch(error => {
+      console.error('Fetch error:', error);
+  });
+}
+```
 
 <img width="50%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/6edc3cb3-c1ab-47b2-9fe5-81ac4311ebf2" alt="">
 <p>The code includes error handling for both fetching data from the JSON API and the external API. If there's an error in fetching data, appropriate error messages are logged to the console.</p>
