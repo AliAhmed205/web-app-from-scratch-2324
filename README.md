@@ -26,8 +26,47 @@
 <br>
 <img width="70%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/2edde8fd-2914-48c0-b2c2-0d2c92b9436f">
 <p>Most of the information presented on Deck of Ali is dynamically generated from a JSON file, making it easy to update and customize. This means you can easily apply this format to showcase your own data, making it a versatile tool for personal branding or sharing information about yourself.</p>
-<img width="1118" alt="Scherm­afbeelding 2024-02-13 om 00 08 11" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/b8c885e0-6ff2-4b5c-8f79-c0061d0f2f7c">
 
+```JSON
+{
+    "cards": [
+        {
+            "name": "Ali Ahmed",
+            "age": 23,
+            "bio": "I'm Ali Ahmed, 23 years old. I'm from Egypt but was born and raised in the Netherlands. With a background in design, I'm now eager to delve more into the technical side.",
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/memoji.png",
+            "socials": { 
+               "discord": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/golden-discord.svg", 
+               "github": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/golden-github.svg", 
+               "linkedin":"https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/golden-linkedin.svg"
+                        }
+            },
+         
+         {
+            "title": "Skills",
+            "bio": "I'm quite proficient with these software tools. I often combine them while working, as they complement each other well.",
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/skills.png",
+            "icons": ["https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_photoshop.svg", 
+                     "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/adobe_illustrator.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/figma.svg", 
+                     "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/HTML_logo-01.svg", 
+                     "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/CSS-icon.svg", "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/JS_logo.svg"]
+         },
+         {
+            "title": "Hobbies",
+            "bio": "You're probably familiar with the classic saying: 'Turn your hobby into your job.' I often immerse myself in HTML/CSS and enjoy crafting engaging websites.",
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/hobbies.png"
+         },
+         {
+            "id": "4",
+            "title": "Fun Facts",
+            "avatar": "https://raw.githubusercontent.com/AliAhmed205/web-app-from-scratch-2324/main/docs/content/feitjes.png"
+         }
+
+
+    ]
+    
+}
+```
 <br>
 <br>
 <img width="30%" src="https://github.com/AliAhmed205/web-app-from-scratch-2324/assets/118130116/b0fbd604-ff1a-40a5-b82c-569825a814a1" alt="">
