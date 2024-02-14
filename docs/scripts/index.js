@@ -23,7 +23,7 @@ document.querySelectorAll('button').forEach(item => {
 
 
 // Function to fetch random facts using an API
-fetchRandomFacts(1);
+// fetchRandomFacts(1);
 
 fetchData();
 
@@ -52,6 +52,8 @@ function updateCardData(data) {
     }
     card1.querySelector('.back h2').textContent = data.cards[0].name;
     card1.querySelector('.back .bio-El').textContent = data.cards[0].bio;
+    if (data.cards[0].socials) {
+    }
   }
 
   // CARD #2
@@ -93,33 +95,33 @@ function updateCardData(data) {
   console.log("Data successfully fetched and applied to cards.");
 }
 
-// Function to fetch random facts using an external API
-function fetchRandomFacts(limit) {
-  const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; 
-  fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
-      method: 'GET',
-      headers: {
-          'X-Api-Key': apiKey,
-          'Content-Type': 'application/json'
-      }
-  })
-  .then(response => {
-      if (!response.ok) {
-          throw new Error('Network response was not ok');
-      }
-      return response.json();
-  })
-  .then(data => {
-      const factsElement = document.getElementById('factElement');
-      factsElement.textContent = ""; 
-      data.forEach(fact => {
-          console.log(fact);
-          const paragraph = document.createElement('p');
-          paragraph.textContent = data[0].fact;
-          factsElement.appendChild(paragraph);
-      });
-  })
-  .catch(error => {
-      console.error('Fetch error:', error);
-  });
-}
+// // Function to fetch random facts using an external API
+// function fetchRandomFacts(limit) {
+//   const apiKey = '+1sBxeKIKF0K2wbqzvra6w==MvpkXwEuvs6O7ZhO'; 
+//   fetch(`https://api.api-ninjas.com/v1/facts?limit=${limit}`, {
+//       method: 'GET',
+//       headers: {
+//           'X-Api-Key': apiKey,
+//           'Content-Type': 'application/json'
+//       }
+//   })
+//   .then(response => {
+//       if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//       }
+//       return response.json();
+//   })
+//   .then(data => {
+//       const factsElement = document.getElementById('factElement');
+//       factsElement.textContent = ""; 
+//       data.forEach(fact => {
+//           console.log(fact);
+//           const paragraph = document.createElement('p');
+//           paragraph.textContent = data[0].fact;
+//           factsElement.appendChild(paragraph);
+//       });
+//   })
+//   .catch(error => {
+//       console.error('Fetch error:', error);
+//   });
+// }
